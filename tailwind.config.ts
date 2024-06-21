@@ -4,6 +4,8 @@ const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    './sanity.config.js',
+    './components/StudioNavbar.tsx',
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
