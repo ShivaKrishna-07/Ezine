@@ -108,7 +108,7 @@ const SlugPage = async ({ params: { slug } }: Props) => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="m-10">
         <PortableText value={post?.body} components={RichText} />
       </div>
     </Container>

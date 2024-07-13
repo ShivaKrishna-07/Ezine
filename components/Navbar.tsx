@@ -7,9 +7,9 @@ export const Navbar = () => {
 
     const navigation = [
         { title: "Home", href: '/'},
-        { title: "Features", href: '/features'},
-        { title: "About Me", href: '/about'},
         { title: "Studio", href: '/studio'},
+        { title: "Features", href: '/'},
+        { title: "About Me", href: '/'},
     ]
 
   return (
@@ -19,7 +19,7 @@ export const Navbar = () => {
             <div className='hidden md:inline-flex items-center gap-7 text-gray-900 hover:text-black duration-200'>
                 {
                     navigation.map(item=>(
-                        <Link href={item.href} className='text-sm uppercase font-semibold relative group overflow-hidden'>
+                        <Link key={item.title} href={item.href} className='text-sm uppercase font-semibold relative group overflow-hidden'>
                             {item.title}
                             <span className='w-full h-[1px] bg-blue-700 absolute inline-block left-0 bottom-0 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-200 '/>
                         </Link>
