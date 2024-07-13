@@ -9,11 +9,14 @@ const query = groq`*[_type == 'post']{
   author->,
   categories[]->
 } | order(_createdAt asc)`;
-
+ 
+export const revalidate = 30;
 
 export default async function Home() {
 
   const posts = await client.fetch(query);
+
+  
 
   return (
     <main>
