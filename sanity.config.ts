@@ -19,7 +19,7 @@ export default defineConfig({
   dataset,
   name: 'Ezine_Studio',
   title: 'Ezine Studio',
-  // Add and edit the content schema in the './sanity/schema' folder
+  //Add and edit the content schema in the './sanity/schema' folder
   schema,
   plugins: [
     structureTool(),
