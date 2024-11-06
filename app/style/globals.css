@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+.nav {
+    padding: 1.25rem; /* Equivalent to p-5 */
+    background-color: #000000; /* Equivalent to bg-black */
+    color: #f5f5f5; /* Equivalent to text-gray-100 */
+    display: flex; /* Equivalent to flex */
+    align-items: center; /* Equivalent to items-center */
+    justify-content: space-between; /* Equivalent to justify-between */
+  }
+
+  .nav-back {
+    display: flex; /* Equivalent to flex */
+    align-items: center; /* Equivalent to items-center */
+    gap: 0.75rem; /* Equivalent to gap-3 (0.75rem = 12px) */
+    font-weight: 600; /* Equivalent to font-semibold */
+    transition: color 0.2s ease; /* Equivalent to duration-200 for a smooth transition */
+  }
+  
+  .nav-back:hover {
+    color: #2563eb; /* Equivalent to hover:text-blue-600 (Tailwind's blue-600) */
+  }
+
+  .nav-title {
+    font-size: 1.5rem; /* Equivalent to text-2xl (1.5rem = 24px) */
+    display: none; /* Equivalent to hidden */
+  }
+  
+  /* For medium screens and up, display the element as inline-flex */
+  @media (min-width: 768px) { /* Tailwind's 'md' breakpoint is 768px */
+    .nav-title {
+      display: inline-flex; /* Equivalent to md:inline-flex */
+    }
+  }

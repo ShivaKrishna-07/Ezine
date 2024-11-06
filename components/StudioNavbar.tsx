@@ -1,4 +1,6 @@
-import 'tailwindcss/tailwind.css';
+// import 'tailwindcss/tailwind.css';
+
+import '../app/style/globals.css'
 
 import Link from "next/link";
 import React from "react";
@@ -8,15 +10,15 @@ import { Logo } from "./Logo";
 export const StudioNavbar = (props: any) => {
   return (
     <div>
-      <div className="p-5 bg-black text-gray-100 flex items-center justify-between">
+      <div className="nav">
       <Link
           href={"/"}
-          className="flex items-center gap-3 font-semibold hover:text-blue-600 duration-200"
+          className="nav-back"
         >
           <IoReturnDownBack className="text-2xl" />
           Go to Website
         </Link>
-        <Logo title="Ezine Studio" className="text-2xl hidden md:inline-flex" />
+        <Logo title="Ezine Studio" className="nav-title" />
         <p className="text-sm">Studio for Blog content</p>
       </div>
       {props.renderDefault(props)}

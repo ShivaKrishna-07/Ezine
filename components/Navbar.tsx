@@ -7,10 +7,12 @@ export const Navbar = () => {
 
     const navigation = [
         { title: "Home", href: '/'},
-        { title: "Studio", href: '/studio'},
-        { title: "Features", href: '/'},
-        { title: "About Me", href: '/'},
+        { title: "Studio", href: '/studio/structure'},
+        { title: "Features", href: '/features'},
+        { title: "About Me", href: '/about'},
     ]
+    console.log(navigation);
+    
 
   return (
     <div className='w-full bg-white/70 h-20 shadow-md sticky top-0 backdrop-blur-2xl transition-colors z-50'>
